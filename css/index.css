@@ -1,0 +1,404 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.container-nav {
+    display: flex;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgba(0,0,0,.5);
+}
+
+.barra-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.cont-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.link {
+    display: block;
+    padding: .5rem 1rem;
+    color: black;
+}
+
+a:hover {
+     color: gray;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper p {
+    font-size: 1.1em;
+}
+
+.card-wrapper {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.card-wrapper a {
+    text-decoration: none;
+    background: rgba(6,80,215);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.contamination-container img, .turtle-container img {
+    width: 100%;
+}
+
+.just_text {
+    text-align: justify;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    background: url('../img/logo.png') 0 0 repeat-x;
+    font-size: 0!important;
+    height: 39px;
+    width: 150px;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+
+h2, h3 {
+    font-family: Arial Rounded MT bold;
+    font-size: 1.5em;
+}
+
+.carousel {
+    padding: 0;
+}
+
+.carousel figure {
+    margin-bottom: 0;
+}
+
+.wrapper .texto {
+    text-align: center;
+}
+
+.texto, h3 {
+    margin-bottom: 20px;
+}
+
+.especies_peligro {
+    background: rgba(6,80,215, .1);
+    padding-bottom: 1px;
+}
+
+.especies_peligro > .texto {
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.especies-peligro-list-container {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.especies-peligro-list-container figcaption {
+    color: white;
+}
+
+.img_form {
+    height: 100%;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.wrapper.img_form {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.cont_marina {
+    background: rgba(6,80,215, .1);
+    padding: 15px;
+}
+
+.cont_marina figure {
+    margin-top: 30px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section .img_form, .content-formulario {
+    display: inline-block;
+}
+
+.form-section aside {
+    margin: 20px 0px 20px 0px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input {
+    display: block;
+    width: 420px;
+    height: 30px;
+    border: 2px solid rgba(6,80,215);
+    border-radius: 3px;
+    outline: none;
+    margin: 0px 0px 10px 0px;
+}
+
+.formulario textarea {
+    border: 2px solid rgba(6,80,215);
+    border-radius: 3px;
+    outline: none;
+    width: 420px;
+}
+
+.formulario label {
+    margin-bottom: 0px;
+}
+
+.boton {
+    width: 100px;
+    height: 36px;
+    border: 1px solid rgba(6,80,215);
+    border-radius: 5px;
+    background-color: rgba(6,80,215);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #f8f9fa;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.content-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rrss {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.rrss, .info {
+    width: 100%;
+}
+
+.rrss li {
+    margin-right: 10px;
+}
+
+.content-img-gracias {
+    display: flex;
+    justify-content: center;
+}
+
+.content-img-gracias img {
+    position: relative;
+    top: 50%;
+}
+
+.mov {
+    position: absolute;
+    left: 0;
+    animation: float 2s ease-in-out infinite;
+    box-shadow: 5px 12px 36px -5px #f1f1f1;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-25px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@media (max-width: 576px) {
+    header {
+        position: relative;
+    }
+
+    .especies-peligro-list-container img {
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .especies-peligro-list-container img {
+        width: 70%;
+    }
+
+    .card-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .img_form {
+        flex: 0 0 50%;
+         max-width: 50%;
+    }
+
+    .contamination-container, .turtle-container {
+        padding: 10px;
+        flex: 0 0 50%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contamination-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .human-impact-section {
+        margin-bottom: 20px;
+    }
+
+    .video {
+        width: 100% !important;
+        height: 40vh !important;    
+    }
+
+    .img_form {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .expand-navbar {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    .link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    .cont-nav {
+        flex-direction: row;
+    }
+
+    .card-wrapper {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+
+}
+
+@media (max-width: 992px) { 
+    header {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-bottom: 160px;
+    }
+
+    .navbar-nav-container {
+        box-sizing: border-box;
+        position: absolute;
+        top: 52px;
+        left: -17px;
+        background-color: rgb(248, 249, 250);
+        padding: 0 30px;
+        width: 100vw;
+        font-weight: 700;
+        z-index: 95;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        position: relative;
+        top: 3px;
+    }
+
+    .especies_peligro,  .cont_marina {
+        max-width: 100% !important;
+    }
+
+    .especies-peligro-list-container {
+        padding: 0;
+    }
+
+    .contamination-container {
+        flex-direction: column-reverse;
+    }
+
+    .formulario input, textarea {
+        width: 100% !important;
+    }
+
+}
+
+@media (min-width: 1200px) { 
+    .wrapper {
+        max-width: 1140px;
+    }
+}
